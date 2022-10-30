@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Credit Card Application</title>
+    <link rel="icon" type="image/x-icon" href="https://pngimg.com/uploads/letter_b/letter_b_PNG16.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-image: url('https://i.pinimg.com/originals/a9/3c/44/a93c4470f3774204739b7f293fd88c15.png');
+    }
+    </style>
+  <body>
+    <h1 class="text-center m-3 txt">Credit Card Application</h1>
+    <form class="col-md-6 col-lg-4 bd1 mx-auto p-2">
+        <div class="mb-3 txt1">
+            <label for="lastname" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+          </div>
+        <div class="mb-3 txt1">
+            <label for="firstname" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstname" placeholder="First Name">
+        </div>
+        <div class="mb-3 txt1">
+            <label for="dob" class="form-label">Date of Birth</label>
+            <input type="date" class="form-control" id="dob">
+        </div>
+        <div class="mb-3 txt1">
+          <label for="email1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email1" placeholder="Email">
+          <div id="emailHelp" class="form-text" style="font-weight:bold; color:red">We'll never share your email with anyone else.</div>
+        </div>
+        <input type="button" class="btn btn-primary col-12" value="Submit">
+      </form>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+      <script>
+        document.querySelector(".btn").addEventListener("click",function(){
+            const dob = new Date(document.querySelector("#dob").value);
+            const yob = dob.getFullYear();
+            const currentyear = new Date().getFullYear();
+            const age = currentyear - yob;
+            alert(age>=18?"Credit Card Application Sucessful!":"Credit Card Application Not Sucessful!")
+        });
+      </script>
+  </body>
+  <div class="footer">
+    <p>Crafted with ❤` by <a Bronise href="https://www.instagram.com/bronise.me/" target="_blank" style="text-decoration:none">Bronise</a></p>
+  </div>
+</html>   

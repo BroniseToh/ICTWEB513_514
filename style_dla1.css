@@ -1,0 +1,28 @@
+.bd1 {
+    background-color: rgb(67, 67, 67);
+    color: white;
+    border: 5px solid rgba(0, 0, 0, 0.937);
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgb(132, 132, 132);
+    border-radius: 15px;
+}
+.txt {
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 1.5px;   
+    -webkit-text-stroke-color: rgb(0, 0, 0); 
+    text-shadow: 2px 2px 3px gray;   
+}
+.footer {
+    position: fixed;
+    left: 15px;
+    bottom: 0;
+    width: 100%;
+    color: white;   
+}
+.txt1 {
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 0.35px;   
+    -webkit-text-stroke-color: rgb(0, 0, 0); 
+    text-shadow: 0.02px 0.02px 0.03px gray; 
+}
